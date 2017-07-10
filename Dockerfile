@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get install -y psmisc && \
     # ifconfig
     apt-get install -y net-tools && \
-    # nsookup, dig, host
+    # nslookup, dig, host
     apt-get install -y dnsutils && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
