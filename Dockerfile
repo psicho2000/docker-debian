@@ -17,6 +17,7 @@ RUN apt-get update && \
 
 RUN mkdir /home/markus && \
     useradd -d /home/markus -s /bin/zsh markus && \
+    chown markus:markus /home/markus && \
     echo "markus ALL=NOPASSWD: ALL" >> /etc/sudoers
 
 USER markus
@@ -24,7 +25,7 @@ USER markus
 # experimental
 #RUN cd /home/markus && \
 #    mkdir dotfiles && \
-#    git clone github.com/psicho2000/dotfiles && \
+#    git clone https://github.com/psicho2000/dotfiles.git && \
 #    ln -s ....
 
 # afterwards, change passwords with passwd
