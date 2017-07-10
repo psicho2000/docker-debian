@@ -25,6 +25,7 @@ USER markus
 # experimental
 #RUN cd /home/markus && \
 #    mkdir dotfiles && \
+#    cd dotfiles
 #    git clone https://github.com/psicho2000/dotfiles.git && \
 #    ln -s ....
 
