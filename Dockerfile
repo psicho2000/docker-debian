@@ -22,11 +22,9 @@ RUN mkdir /home/markus && \
 
 USER markus
 
-# experimental
-#RUN cd /home/markus && \
-#    mkdir dotfiles && \
-#    cd dotfiles
-#    git clone https://github.com/psicho2000/dotfiles.git && \
-#    ln -s ....
+# install dotfiles
+RUN cd $HOME && \
+    git clone https://github.com/psicho2000/dotfiles.git && \
+    $HOME/dotfiles/symlink-dotfiles.sh
 
 # afterwards, change passwords with passwd
