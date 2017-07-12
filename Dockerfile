@@ -17,6 +17,7 @@ RUN apt-get update && \
         less \
         lsb-release \
         lsof \
+        man \
         nano \
         # ifconfig
         net-tools \
