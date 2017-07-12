@@ -27,4 +27,6 @@ RUN cd $HOME && \
     git clone https://github.com/psicho2000/dotfiles.git && \
     $HOME/dotfiles/symlink-dotfiles.sh
 
+WORKDIR $HOME
+
 # afterwards, change passwords with passwd
