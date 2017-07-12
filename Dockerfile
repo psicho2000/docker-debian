@@ -5,27 +5,29 @@ USER root
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y git && \
-    bzip2 && \
-    cron && \
-    curl && \
-    # nslookup, dig, host
-    dnsutils && \
-    htop && \
-    inetutils-traceroute && \
-    less && \
-    lsb-release && \
-    lsof && \
-    nano && \
-    # ifconfig
-    net-tools && \
-    # pstree
-    psmisc && \
-    sudo && \
-    tcpflow && \
-    tree && \
-    wget && \
-    zsh && \
+    apt-get install -y \
+        git \
+        bzip2 \
+        cron \
+        curl \
+        # nslookup, dig, host
+        dnsutils \
+        htop \
+        inetutils-traceroute \
+        less \
+        lsb-release \
+        lsof \
+        nano \
+        # ifconfig
+        net-tools \
+        # pstree
+        psmisc \
+        sudo \
+        tcpflow \
+        tree \
+        wget \
+        zsh \
+    && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
