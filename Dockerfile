@@ -21,6 +21,8 @@ RUN apt-get update && \
         nano \
         # ifconfig
         net-tools \
+        ## ps
+        procps \
         # pstree
         psmisc \
         # pygmentize, needed for colorized outputs
