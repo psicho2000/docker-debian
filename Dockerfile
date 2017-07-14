@@ -23,6 +23,8 @@ RUN apt-get update && \
         net-tools \
         # pstree
         psmisc \
+        # pygmentize, needed for colorized outputs
+        python-pygments \
         sudo \
         tcpflow \
         tree \
