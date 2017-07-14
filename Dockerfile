@@ -43,5 +43,6 @@ USER markus
 RUN cd $HOME && \
     git clone https://github.com/psicho2000/dotfiles.git && \
     $HOME/dotfiles/symlink-dotfiles.sh
+    $HOME/dotfiles/install-oh-my-zsh.sh
 
 # afterwards, change passwords with passwd
