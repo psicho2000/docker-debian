@@ -6,12 +6,14 @@ USER root
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
-        git \
+        # prevent 'debconf: delaying package configuration, since apt-utils is not installed'
+        apt-utils \
         bzip2 \
         cron \
         curl \
         # nslookup, dig, host
         dnsutils \
+        git \
         htop \
         inetutils-traceroute \
         less \
