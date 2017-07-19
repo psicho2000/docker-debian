@@ -44,8 +44,7 @@ RUN mkdir /home/markus && \
 USER markus
 
 # install dotfiles
-RUN cd $HOME && \
-    git clone https://github.com/psicho2000/dotfiles.git && \
+RUN git clone https://github.com/psicho2000/dotfiles.git $HOME && \
     $HOME/dotfiles/symlink-dotfiles.sh && \
     $HOME/dotfiles/install-oh-my-zsh.sh
 
