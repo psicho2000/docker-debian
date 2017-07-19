@@ -5,7 +5,6 @@ USER root
 
 RUN apt-get update && \
     # prevent 'debconf: delaying package configuration, since apt-utils is not installed'
-    apt-get install -y apt-utils && \
     apt-get upgrade -y && \
     apt-get install -y \
         bzip2 \
@@ -15,6 +14,7 @@ RUN apt-get update && \
         dnsutils \
         git \
         htop \
+        # traceroute
         inetutils-traceroute \
         less \
         lsb-release \
