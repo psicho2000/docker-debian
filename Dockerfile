@@ -4,10 +4,10 @@ FROM debian:9
 USER root
 
 RUN apt-get update && \
+    # prevent 'debconf: delaying package configuration, since apt-utils is not installed'
+    apt-get install -y apt-utils && \
     apt-get upgrade -y && \
     apt-get install -y \
-        # prevent 'debconf: delaying package configuration, since apt-utils is not installed'
-        apt-utils \
         bzip2 \
         cron \
         curl \
