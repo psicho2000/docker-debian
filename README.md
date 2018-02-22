@@ -9,10 +9,12 @@ docker push psicho/debian
 ```
 
 ## Run (on Windows)
+From local tag:
 `docker run -ditw //home/markus --name mydebian debian-markus`
 
 or
 
+From Docker Hub:
 `docker run -ditw //home/markus --name mydebian psicho/debian`
 
 On Linux, use `/home/markus` as working-dir.
