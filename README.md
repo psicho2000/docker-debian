@@ -9,11 +9,11 @@ docker push psicho/debian
 ```
 
 ## Run (on Windows)
-`docker run -ditw //home/markus --name debian debian-markus`
+`docker run -ditw //home/markus --name mydebian debian-markus`
 
 or
 
-`docker run -ditw //home/markus --name debian psicho/debian`
+`docker run -ditw //home/markus --name mydebian psicho/debian`
 
 On Linux, use `/home/markus` as working-dir.
 
