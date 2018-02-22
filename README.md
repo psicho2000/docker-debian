@@ -8,12 +8,14 @@ docker tag debian-markus psicho/debian
 docker push psicho/debian
 ```
 
-## Run
-`docker run -ditw /home/markus --name debian debian-markus`
+## Run (on Windows)
+`docker run -ditw //home/markus --name debian debian-markus`
 
 or
 
-`docker run -ditw /home/markus --name debian psicho/debian`
+`docker run -ditw //home/markus --name debian psicho/debian`
+
+On Linux, use `/home/markus` as working-dir.
 
 ## Login
 `docker exec -it debian zsh`
