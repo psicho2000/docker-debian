@@ -39,7 +39,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN mkdir /home/me && \
-    useradd -d /home/me -s /bin/zsh me && \
+    useradd -d /home/me -s /bin/bash me && \
     chown me:me /home/me && \
     echo "me ALL=NOPASSWD: ALL" >> /etc/sudoers
 
