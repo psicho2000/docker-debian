@@ -23,9 +23,9 @@ On Linux, use `/home/me` as working-dir.
 
 ## Login
 ```
-docker exec -it mydebian zsh
+docker exec -it mydebian bash
 ```
 or
 ```
-docker exec -it mydebian bash
+docker exec -it mydebian zsh
 ```
