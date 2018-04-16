@@ -20,8 +20,8 @@ From Docker Hub:
 On Linux, use `/home/markus` as working-dir.
 
 ## Login
-`docker exec -it debian zsh`
+`docker exec -it mydebian zsh`
 
 or
 
-`docker exec -it debian bash`
+`docker exec -it mydebian bash`
