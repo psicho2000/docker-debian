@@ -38,12 +38,12 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN mkdir /home/markus && \
-    useradd -d /home/markus -s /bin/zsh markus && \
-    chown markus:markus /home/markus && \
-    echo "markus ALL=NOPASSWD: ALL" >> /etc/sudoers
+RUN mkdir /home/me && \
+    useradd -d /home/me -s /bin/zsh me && \
+    chown me:me /home/me && \
+    echo "me ALL=NOPASSWD: ALL" >> /etc/sudoers
 
-USER markus
+USER me
 
 # install dotfiles
 RUN git clone https://github.com/psicho2000/dotfiles.git $HOME/dotfiles && \
